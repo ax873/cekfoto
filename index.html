@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri Foto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .photo-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      width: 200px;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .download-btn {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 6px 12px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galeri Foto</h1>
+
+  <div class="gallery">
+    <div class="photo-card">
+      <img src="image/foto1.jpg" alt="Foto 1">
+      <a href="image/foto1.jpg" download class="download-btn">Download</a>
+    </div>
+
+    <div class="photo-card">
+      <img src="image/foto2.jpg" alt="Foto 2">
+      <a href="image/foto2.jpg" download class="download-btn">Download</a>
+    </div>
+
+    <div class="photo-card">
+      <img src="image/foto3.jpg" alt="Foto 3">
+      <a href="image/foto3.jpg" download class="download-btn">Download</a>
+    </div>
+  </div>
+</body>
+</html>
